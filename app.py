@@ -21,12 +21,8 @@ Date Submitted: May 17, 2024
 # Load the trained model
 @st.cache(allow_output_mutation=True)
 def load_model():
-    with open("cnn_model.json", "r") as json_file:
-        loaded_model_json = json_file.read()
-    loaded_model = tf.keras.models.model_from_json(loaded_model_json)
-    loaded_model.load_weights("cnn_model.h5")
-    loaded_model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-    return loaded_model
+    model = tf.keras.models.load_model("fashion_mnist_model.h5")
+    return model
 
 # Define the class names for fashion_MNIST
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
