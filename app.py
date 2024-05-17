@@ -21,7 +21,7 @@ Date Submitted: May 17, 2024
 # Load the trained model
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("fashion_mnist_model.h5")
+    model = tf.keras.models.load_model("final_model.h5")
     return model
 
 # Define the class names for fashion_MNIST
