@@ -3,10 +3,9 @@ import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
 
-# Set page config
 st.set_page_config(page_title="Emerging Technology 2 in CpE", layout="wide")
 
-# Title and student details
+
 st.title("Emerging Technology 2 in CpE")
 st.markdown("""
 Name:
@@ -18,27 +17,24 @@ Course/Section: CPE019/CPE32S5
 Date Submitted: May 17, 2024
 """)
 
-# Load the trained model
 @st.cache(allow_output_mutation=True)
 def load_model():
     model = tf.keras.models.load_model("final_model.h5")
     return model
 
-# Define the class names for fashion_MNIST
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 model = load_model()
 
-# Streamlit app
 st.title("Fashion Item Classification")
 st.write("Upload an image to classify the type of fashion item.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 def import_and_predict(image_data, model):
-    size = (28, 28)  # FashionMNIST images are 28x28
+    size = (28, 28)  
     image = ImageOps.fit(image_data, size)
-    img = np.asarray(image.convert('L'))  # Convert image to grayscale
+    img = np.asarray(image.convert('L'))  
     img = np.expand_dims(img, axis=0)
     img = np.expand_dims(img, axis=-1)
     img = img / 255.0
