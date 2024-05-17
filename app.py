@@ -12,7 +12,7 @@ Name:
 **Kevin Roi A. Sumaya**
 | **Daniela D. Rabang**
 
-Course/Section: **CPE019/CPE32S5**
+Course/Section: **CPE019** | **CPE32S5**
 
 Date Submitted: **May 18, 2024**
 """)
