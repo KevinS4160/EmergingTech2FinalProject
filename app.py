@@ -6,7 +6,7 @@ import numpy as np
 st.set_page_config(page_title="Emerging Technology 2 in CpE", layout="wide")
 
 
-st.title("Emerging Technology 2 in CpE")
+st.title("Fashion Item Classification (fashion_mnist)")
 st.markdown("""
 Name:
 - Kevin Roi A. Sumaya
