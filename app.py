@@ -6,15 +6,15 @@ import numpy as np
 st.set_page_config(page_title="Emerging Technology 2 in CpE", layout="wide")
 
 
-st.title("Fashion Item Classification (fashion_mnist)")
+st.title("Model Deployment Project")
 st.markdown("""
 Name:
 **Kevin Roi A. Sumaya**
 | **Daniela D. Rabang**
 
-Course/Section: CPE019/CPE32S5
+Course/Section: **CPE019/CPE32S5**
 
-Date Submitted: May 18, 2024
+Date Submitted: **May 18, 2024**
 """)
 
 @st.cache(allow_output_mutation=True)
