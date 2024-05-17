@@ -10,7 +10,7 @@ st.title("Fashion Item Classification (fashion_mnist)")
 st.markdown("""
 Name:
 Kevin Roi A. Sumaya
-Daniela D. Rabang
+| Daniela D. Rabang
 
 Course/Section: CPE019/CPE32S5
 
