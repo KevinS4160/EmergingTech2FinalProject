@@ -27,20 +27,6 @@ def load_model():
 # Define the class names for fashion_MNIST
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
-# Load example images for each category
-example_images = {
-    'T-shirt/top': 'FashionMNIST/T-shirt_top/T-shirt_top_1.jpg',
-    'Trouser': 'FashionMNIST/Trouser/Trouser_1.jpg',
-    'Pullover': 'FashionMNIST/Pullover/Pullover_1.jpg',
-    'Dress': 'FashionMNIST/Dress/Dress_1.jpg',
-    'Coat': 'FashionMNIST/Coat/Coat_1.jpg',
-    'Sandal': 'FashionMNIST/Sandal/Sandal_1.jpg',
-    'Shirt': 'FashionMNIST/Shirt/Shirt_1.jpg',
-    'Sneaker': 'FashionMNIST/Sneaker/Sneaker_1.jpg',
-    'Bag': 'FashionMNIST/Bag/Bag_1.jpg',
-    'Ankle boot': 'FashionMNIST/Ankle_boot/Ankle_boot_1.jpg'
-}
-
 model = load_model()
 
 # Streamlit app
