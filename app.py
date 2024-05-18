@@ -37,7 +37,7 @@ def import_and_predict(image_data, model):
     img = np.asarray(image.convert('L'))  
     img = np.expand_dims(img, axis=0)
     img = np.expand_dims(img, axis=-1)
-    img = img / 255.0
+    img = img / 150.0
     prediction = model.predict(img)
     return prediction
 
